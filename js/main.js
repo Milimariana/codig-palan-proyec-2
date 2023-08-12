@@ -3,28 +3,16 @@ tituloH1.innerText =  "Mildred Chacón";
 
 
 
-
-
-
-
-
-
 const menuBoton = document.querySelector("#menu-bton");
 menuBoton.addEventListener("click", function(){
     document.body.classList.toggle("mobile-menu-active")
 
 })
 
+const swith = document.querySelector(".switch");
 
+swith.addEventListener("click", e=>{
+    swith.classList.toggle("active");
+    document.body.classList.toggle("active");
 
-/* para cambiar de fondo **/
-
-let toggle=document.getElementById("toggle");
-let label_toggle=document.getElementById("label_toggle");
-toggle.addEventListener("change", (evento)=>{
- let checked=evento.target.checked;
- document.body.classList.toggle("dark");
- 
 })
-
-
