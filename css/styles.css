@@ -561,7 +561,7 @@ a {
 
     h2 {
 
-        font-size: 32px;
+        font-size: 30px;
 
     }
 
@@ -591,7 +591,6 @@ a {
     }
     .letra{
         font-size: 32px;
-        margin-top: 10px;
         
     }
     .imagen img{
@@ -599,6 +598,7 @@ a {
     
     }
     
+
    
     .galeria{
         width: 100%;
@@ -609,7 +609,8 @@ a {
         row-gap: 18px;
     }
     
-    p{ font-size: 22px;
+    p{ 
+        font-size: 20px;
         margin:60px 0;
         margin-left: 20px;
         margin-right: 20px;
@@ -629,6 +630,8 @@ a {
         font-size: 18px;
     }
      
+    
+
     .articulo{
         background-color:#9854cb;
         text-align: center;
@@ -654,8 +657,10 @@ a {
     .imagen {
         width : 100%;
         max-width : 500px;
-     }
+       }
+       
 
+    
    
 
 
