@@ -326,6 +326,7 @@ li.menu-item a:hover {
 .letra {
     font-size: 28px;
     color: #000;
+    
 }
  
 
@@ -589,7 +590,8 @@ a {
     
     }
     .letra{
-        font-size: 32px ;
+        font-size: 32px;
+        margin-top: 10px;
         
     }
     .imagen img{
