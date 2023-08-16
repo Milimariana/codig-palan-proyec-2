@@ -15,8 +15,6 @@
 
 }
 
-
-
 body{
     
     line-height: 1.2;
@@ -24,10 +22,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Merienda', cursiva; 
-    background-image: url(../img/fondowh.png) ;
+    background-color: #9854cb; 
     
-     
-
 }
 
 header{
@@ -37,13 +33,12 @@ header{
     padding: 16px;
     height: 100px;
     width: 100%;
-    background-image: url(../img/fondowh.png) ;
+    background-color: #9854cb; 
     position: fixed;
     top: 0;
     left: 0;
     box-shadow: 0 3px 10px -5px; color: #fff;
     
-
 }
 /*========menu hamburguesa***/
 
@@ -54,7 +49,7 @@ header{
     outline: 0;
     font-size: 30px;
     width: 30px;
-    height: 80px;
+    height: 30px;
     cursor: pointer;
     color:#fff;
     
@@ -81,18 +76,16 @@ nav {
     position: relative;
     border-radius: 100px;
     border: #333 solid 2px;
-    background-color: #000;
+    background-color: #9854cb;
+    margin-top: 10px;
     
-   
-
 }
  .switch i{
     font-size: 1rem;
     color: #fff;
-    
-    
-    
+       
  }
+
 .menu li:last-child::before{
     content: "";
     position: absolute;
@@ -104,43 +97,40 @@ nav {
     left: 0;
     right: unset;
     
-    
-
 }
-
 
 .menu li:last-child.active::before{
     right: 0;
     left: unset;
     border: solid thin #fff;
     
-    
 }
+
 .menu li:last-child.active i:first-child{
     color: #fff;
-    
     
 } 
 
 .menu li:last-child.active{
-    background-image: url(../img/fondonegro.jpeg);
+    background-color: #27104E;
     border: solid 2px #fff;
     
 }
+
 /***Estilo al activarse modo oscuro***/
 
 body.active header{
-    background-image: url(../img/fondonegro.jpeg);
+    background-color: #27104E;
+
 }
 
 body.active.oscuro{
-    background-image: url(../img/fondonegro.jpeg);
+    background-color: #27104E;
 }
 
 
-
 body.active nav ul{
-    background-image: url(../img/fondonegro.jpeg);
+    background-color: #27104E;
 }
 body.active ul #menu{
     color: #cfcfcf;
@@ -150,8 +140,19 @@ body.active nav ul li a{
     color: #cfcfcf;
 }
 
+body.active nav li.menu-item a:hover{
+    background-color: #9854cb;
+    transition: 0.3s ease;
+    
+}
+
+body.active nav .menu-lista2 a:hover{
+    background-color: #9854cb;
+}
+
+
 body.active main{
-    background-image: url(../img/fondonegro.jpeg);
+    background-color: #27104E;
     
 }
 body.active h1  {
@@ -159,7 +160,7 @@ body.active h1  {
 
 }
 body.active section:first-child{
-    background-image: url(../img/fondonegro.jpeg);
+    background-color: #27104E;
     
     
 }
@@ -171,8 +172,23 @@ body.active section:first-child p{
 
 
 body.active section:first-child a.boton{
-    background-color: #62cce6;
+    background-color: #75e8e7;
     
+}
+
+body.active section a.boton:hover{
+    background-color: #9854cb;
+    transition: 0.3s;
+
+}
+
+body.active section h2{
+    color: #cfcfcf;
+}
+
+body.active section p{
+    color: #cfcfcf;
+    font-size: 20px;
 }
 
 body.active section article h2{
@@ -185,22 +201,27 @@ body.active section article p{
 }
 
 body.active section article  {
-    background-image: url(../img/fondonegro.jpeg);
+    background-color: #27104E;
 
 }
-
 
 body.active section  ul li i {
     color:#cfcfcf;
     
 }
 
+body.active section #redes :hover{
+    background-color:#9854cb;
+   
+
+}
+
 body.active footer{
-    background-image: url(../img/fondonegro.jpeg);
+    background-color: #75e8e7;
 }
 
 body.active footer p{
-    color:#cfcfcf;
+    color:#000;
 }
 
 /****menu navegacion estilo***/
@@ -219,7 +240,7 @@ body.mobile-menu-active i#open-menu{
 }
 
 body.mobile-menu-active header{
-	height: 45vh;
+	height: 50vh;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	transition: height 0.7s;
@@ -240,20 +261,13 @@ body.mobile-menu-active ul#menu {
 }
 
 
-
-
-
-
 .logo{
     margin-top: 5px;
     margin-right:5px;
     height: 50px;
     width: 50px;
-    
-    
+       
 }
-
-
 
 
 ul#menu {
@@ -261,7 +275,6 @@ ul#menu {
     font-size: 20px;
     color: #fff;  
     cursor: pointer;
-    
     font-weight: bold;
 }
 
@@ -271,14 +284,26 @@ li.menu-item {
     
 }
  
+.menu-lista1{
+    display: inline-block;
+    padding: 16px;
+    
+ }
 .menu-lista2{
     display: inline-block;
     padding: 16px;
     
-    }
+ }
 
 
 li.menu-item a:hover {
+	background-color: #3a58ed;
+    color: black;
+	transition: 0.3s;
+	
+}   
+
+.menu-lista1 a:hover {
 	background-color: #3a58ed;
     color: black;
 	transition: 0.3s;
@@ -292,16 +317,55 @@ li.menu-item a:hover {
 }	
 
 
+/*** Estilo de la Galeria**/
+
+.imagen{
+    width: 100%;
+
+}
+.letra {
+    font-size: 28px;
+    color: #000;
+}
+ 
+
+
+.imagen img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 20px;
+    justify-content: center;
+    font-size: medium;
+
+
+}
+
+.imagen img:hover{
+    transform: scale(1.3);
+    
+}
+.galeria{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    
+
+}
+
+
 .foto1 {
     border-radius: 50%;
     border: solid 5px;
-    border-color: #62cce6;
+    border-color: #75e8e7;
     width: 100px;
     max-height: 400px;
     min-width: 300px;
     max-width: 500px; 
     margin-top:40px;
-    
     
 }
 
@@ -315,16 +379,14 @@ section {
     padding-top: 90px;
     font-size: 18px;
     
-    
-
-    
 }
+
 section#Inicio {
     
     justify-content: space-around;
        
 
-    }
+ }
 
 
 h1 {
@@ -333,8 +395,7 @@ h1 {
     text-align: center;
     margin-top: 40px;
     color:black;
-    text-decoration: underline; 
-
+    padding: 10px;
     
 }
 
@@ -346,7 +407,7 @@ h1 {
 .boton{
     padding: 12px 20px;
 	border-radius: 50px;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
 	display: inline-block;
     border: 1px solid #909ddb;
@@ -357,10 +418,11 @@ h1 {
 }
 .boton:hover {
     background-color: #62cce6;
-    transition: 0.3s;
+    transition: 1s;
     
 
 }
+
 
 
 h2{
@@ -372,28 +434,27 @@ h2{
 
 .articulo{
     
-    background-color: #62cce6;
+    background-color: #9854cb;
     text-align: center;
     max-width: 600px;
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0px 4px 12px 6px #62cce6;
-    color: white;
+    box-shadow: 0px 4px 12px 6px #75e8e7;
+    color: black;
 
 }
 .articulo2{
-    background-color: #62cce6;
+    background-color: #9854cb;
     text-align:left;
     max-width: 600px;
     padding: 40px;
     border-radius: 20px;
     margin-top: 40px;
     display: flex;
-    box-shadow: 0px 4px 12px 6px #62cce6;
-    
-     
-    
+    box-shadow: 0px 4px 12px 6px #75e8e7;
+           
 }
+
 .parrafo2{
     color: black;
 }
@@ -410,7 +471,6 @@ main {
     max-width: 1200px;
     margin: auto;
     
-
 }
 
 
@@ -420,8 +480,6 @@ main {
     justify-content: center;
     margin-top: 40px;
     color: black;
-   
-   
 }
 
 
@@ -432,18 +490,14 @@ main {
     line-height: 50px;
     margin: 20px;
     
-    
-
 }
 
-  #redes  :hover{
-    background-color:#62cce6;
-    transition: 0.3s ease;
-    border-radius: 50px;
+#redes  :hover{
+    background-color:#75e8e7;
+    transition: 1s;
+    border-radius: 50px;  
     
-    
-    
-  }
+}
 
 li.icono{
     padding: 10px  ;
@@ -459,15 +513,16 @@ footer{
    text-align: justify;
    height: 45px;
    padding: 10px 5px 10px 5px;
+   border-color: #75e8e7;
   
+}
    
-   }
-   
-   #footer{
+#footer{
     font-size: x-small;
-   }
+}
 
-/* Para quitar los puntos a los items de listas */
+ /* Para quitar los puntos a los items de listas */
+
 ul {
     list-style: none;
 }
@@ -512,39 +567,56 @@ a {
     #menu-bton{
 
         display: none;
+    }
 
-     }
-
-     .boton{
+    .boton{
         background-color: rgb(100, 66, 238);
         border: 5px solid #909ddb;  
         
-     }
+    }
      
-     nav {
+    nav {
         display: block;
      }
 
      .switch{
-        background-color:rgb(100, 66, 238);
-     }
+        background-color:#9854cb;
+    }
+     
+    /**Estilo a la Galareria**/
+    .imagen{
+        width: 100%;
     
-
-
-
-
-
-
-     p{ font-size: 22px;
+    }
+    .letra{
+        font-size: 32px ;
+        
+    }
+    .imagen img{
+        width: 100%;
+    
+    }
+    
+   
+    .galeria{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        column-gap: 18px;
+        row-gap: 18px;
+    }
+    
+    p{ font-size: 22px;
         margin:60px 0;
         margin-left: 20px;
         margin-right: 20px;
         text-align: justify;
         color: black;
         
-       
     }
-     section {
+     
+    section {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -553,19 +625,19 @@ a {
         min-height: 120vh;
         padding-top: 90px;
         font-size: 18px;
-     }
+    }
      
-     .articulo{
-        background-color:rgb(100, 66, 238);
+    .articulo{
+        background-color:#9854cb;
         text-align: center;
         max-width: 1000px;
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0px 4px 12px 6px #62cce6;
        
-     }
+    }
      
-     .foto1 {
+    .foto1 {
         border-radius: 50%;
         border: solid 15px;
         border-color: #62cce6;
@@ -575,14 +647,13 @@ a {
         max-width: 300%; 
         margin-top:40px;
         margin-right: 40px;      
-        
-
-  
     }
+
     .imagen {
- width : 100%;
- max-width : 500px;
-}
+        width : 100%;
+        max-width : 500px;
+     }
+
    
 
 
